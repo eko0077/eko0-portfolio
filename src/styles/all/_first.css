@@ -1,0 +1,26 @@
+/* ne marche pas */
+.first-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.eko0{
+    height: 200px;
+}
+
+.accion{
+    position: absolute;
+    bottom: 25px;
+    color: var(--subtitle-green-eko0-01);
+    font-family:K2D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.accion-text{
+    margin: 0px;
+}
