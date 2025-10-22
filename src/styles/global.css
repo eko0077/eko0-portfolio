@@ -19,16 +19,22 @@
 *{
     margin: 0px;
 }
+a{
+    z-index: 20;
+}
 body{
     height: 100vh;
+
 }
 .page{
     background-color:  var(--white-eko0);
-    height: 100vh;
+
+    
 }
 .separation{
     height: 2.5px;
     background-color: var(--subtitle-green-eko0-02);
     margin-left: 40px;
     margin-right: 40px;
+    
 }

@@ -7,3 +7,53 @@
 .portfolio{
     height:140px ;
 }
+.title-about{
+    font-family:Pixelify Sans;
+    font-size: 85px;
+    color: var(--subtitle-green-eko0-01);
+    margin-left: 40px;
+    margin-top:90px ;
+}
+.about-me{
+display: flex;
+flex-direction: column;
+gap: 55px;
+margin-top: 30px;
+margin-left: 118px;
+margin-bottom:250px;
+}
+.description-about{
+    font-family: k2d;
+    color: var(--text);
+    font-size: 20px;
+}
+.logs,.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   
+}
+.logiciel ,.contact-me{
+    font-family: Orbitron;
+    font-size: 32px;
+    color: var(--subtitle-green-eko0-02);
+}
+.icons{
+    display: flex;
+    gap: 10px;
+    margin-left: 55px;
+}
+.cv{
+    display: flex;
+    font-family: orbitron;
+    font-size:32px;
+    color: var(--subtitle-green-eko0-02);
+    gap:10px;
+}
+.eko{
+    height: 790px;
+    position: absolute;
+    right: -180px;
+    top: 1500px;
+    z-index: 20;
+}
