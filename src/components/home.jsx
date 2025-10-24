@@ -19,10 +19,9 @@ export default function Home() {
       <h3 className="title-about"> About me</h3>
       <div className="about-me">
         <p className="description-about">
-          I’m a UI/UX designer, 2D artist and i learn 3D on Blender.
-        </p>
+Hi there!  I’m Clara — or eko0 if you know me online. <br/> I was born in March 2008, and I’m a passionate UI/UX and graphic designer who loves turning ideas into meaningful visual experiences. I’m currently learning 3D design with Blender to expand my creative skills and bring more depth and emotion into my work.My goal is to blend design, storytelling, and technology to create experiences that feel both intuitive and inspiring.        </p>
         <div className="logs">
-          <h4 className="logiciel">logiciels</h4>
+          <h4 className="logiciel">software</h4>
           <div className="icons">
            <a href="https://www.figma.com/"> <img className="icon" src="../src/assets/svg/Ffigma.svg" alt="" /></a>
             <a href="https://code.visualstudio.com"><img className="icon" src="../src/assets/svg/vscode.svg" alt="" /></a>

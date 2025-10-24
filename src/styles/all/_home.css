@@ -26,6 +26,7 @@ margin-bottom:250px;
     font-family: k2d;
     color: var(--text);
     font-size: 20px;
+    margin-right:200px ;
 }
 .logs,.contact{
     display: flex;
