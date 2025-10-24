@@ -1,60 +1,73 @@
-.first-section{
+.first-section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-.portfolio{
-    height:140px ;
+
+.portfolio {
+    height: 140px;
 }
-.title-about{
-    font-family:Pixelify Sans;
+
+.title-about {
+    font-family: Pixelify Sans;
     font-size: 85px;
     color: var(--subtitle-green-eko0-01);
     margin-left: 40px;
-    margin-top:90px ;
+    margin-top: 90px;
 }
-.about-me{
-display: flex;
-flex-direction: column;
-gap: 55px;
-margin-top: 30px;
-margin-left: 118px;
-margin-bottom:250px;
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    margin-top: 30px;
+    margin-left: 118px;
+    margin-bottom: 170px;
+    
 }
-.description-about{
+
+.description-about {
     font-family: k2d;
     color: var(--text);
     font-size: 20px;
-    margin-right:200px ;
+    margin-right: 350px;
 }
-.logs,.contact{
+
+.logs,
+.contact {
     display: flex;
     flex-direction: column;
     gap: 15px;
-   
+
 }
-.logiciel ,.contact-me{
+
+.logiciel,
+.contact-me {
     font-family: Orbitron;
     font-size: 32px;
     color: var(--subtitle-green-eko0-02);
 }
-.icons{
+
+.icons {
     display: flex;
     gap: 10px;
     margin-left: 55px;
 }
-.cv{
+
+.cv {
     display: flex;
     font-family: orbitron;
-    font-size:32px;
+    font-size: 32px;
     color: var(--subtitle-green-eko0-02);
-    gap:10px;
+    gap: 10px;
 }
-.eko{
-    height: 790px;
+
+.eko {
+
+    height: 720px;
     position: absolute;
-    right: -180px;
-    top: 1500px;
+    right: -160px;
+    top: 1600px;
     z-index: 20;
 }

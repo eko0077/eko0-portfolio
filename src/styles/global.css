@@ -18,17 +18,21 @@
 }
 *{
     margin: 0px;
+   
 }
 a{
     z-index: 20;
 }
 body{
     height: 100vh;
+     overflow-x:hidden;
 
+}
+img {
+display: block;
 }
 .page{
     background-color:  var(--white-eko0);
-
     
 }
 .separation{

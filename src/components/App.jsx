@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ThemeToggle from "./ui/ThemeToggle";
+import ThemeToggle from "./ui/items/ThemeToggle";
 import { body } from "framer-motion/client";
 import { useEffect } from "react";
 
