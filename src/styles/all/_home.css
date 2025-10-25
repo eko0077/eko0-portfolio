@@ -6,7 +6,7 @@
 }
 
 .portfolio {
-    height: 140px;
+    height: 100px;
 }
 
 .title-about {
@@ -68,6 +68,57 @@
     height: 720px;
     position: absolute;
     right: -160px;
-    top: 1600px;
+margin-top: 40px;
     z-index: 20;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+  
+
+}
+.eko0-footer{
+    height: 100px;
+    margin-bottom: 130px;
+    margin-top: 130px;
+}
+.nav-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        margin-left: 40px;
+    margin-right: 40px;
+      margin-bottom:20px ;
+}
+.icon-footer{
+    display: flex;
+    gap: 25px;
+align-items: center;
+justify-content: center;
+}
+.vertical-separation{
+    height:38px ;
+    width: 2px;
+   background-color: var(--subtitle-green-eko0-02);
+}
+.contact-footer{
+    display: flex;
+    gap: 6px;
+}
+.footer-icon{
+    height:31px ;
+}
+.page-footer{
+    font-family: orbitron;
+    color: var(--subtitle-green-eko0-02);
+    font-size: 24px;
+    display: flex;
+    gap:60px ;
+}
+.copirite{
+    color: var(--subtitle-green-eko0-02);
+    font-family: k2d;
+    font-size: 24px;
 }

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import ThemeToggle from "./ui/items/ThemeToggle";
+import Footer from "./ui/component/Footer";
 import { body, path } from "framer-motion/client";
 import { useEffect } from "react";
 import React from "react";
@@ -7,7 +8,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="page overflow-x-hidden-hidden">
+    <div className="page">
       {/* add nav later */}
       <div className="first-section">
         <img
@@ -52,8 +53,8 @@ Hi ! I’m Clara, but you can call me eko0 ! <br/> I was born in March 2008 and 
           <img className="eko" src="../src/assets/img/eko0-about.png" alt="" />
       </div> 
     
-      <div className="separation"> </div>
-      <ThemeToggle />
+   
+      <Footer/>
     </div>
   );
 }

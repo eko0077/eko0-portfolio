@@ -12,9 +12,12 @@
 }
 
 [data-theme="dark"] {
-    --bg: #111;
-    --text: #f1f1f1;
-    --accent: #8b5cf6;
+    --white-eko0: #232323;
+    --title-green-eko0: #7EDD79;
+    --subtitle-green-eko0-01: #15BC55;
+    --subtitle-green-eko0-02: #209B62;
+    --text: #D3FFBC;
+    --black-eko0: #F4F4F4;
 }
 *{
     margin: 0px;
@@ -36,7 +39,7 @@ display: block;
     
 }
 .separation{
-    height: 2.5px;
+    height: 3px;
     background-color: var(--subtitle-green-eko0-02);
     margin-left: 40px;
     margin-right: 40px;
