@@ -24,7 +24,7 @@
     margin-top: 30px;
     margin-left: 118px;
     margin-bottom: 170px;
-    
+
 }
 
 .description-about {
@@ -68,57 +68,90 @@
     height: 720px;
     position: absolute;
     right: -160px;
-margin-top: 40px;
+    margin-top: 80px;
     z-index: 20;
 }
 
 /* footer */
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
-  
+
 
 }
-.eko0-footer{
+
+.eko0-footer {
     height: 100px;
     margin-bottom: 130px;
     margin-top: 130px;
 }
-.nav-footer{
+
+.nav-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-        margin-left: 40px;
+    margin-left: 40px;
     margin-right: 40px;
-      margin-bottom:20px ;
+    margin-bottom: 20px;
+    
 }
-.icon-footer{
+
+.icon-footer {
     display: flex;
     gap: 25px;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
-.vertical-separation{
-    height:38px ;
+
+.vertical-separation {
+    height: 38px;
     width: 2px;
-   background-color: var(--subtitle-green-eko0-02);
+    background-color: var(--subtitle-green-eko0-02);
 }
-.contact-footer{
+
+.contact-footer {
     display: flex;
     gap: 6px;
 }
-.footer-icon{
-    height:31px ;
+
+.footer-icon {
+    height: 31px;
 }
-.page-footer{
+
+.page-footer {
     font-family: orbitron;
     color: var(--subtitle-green-eko0-02);
     font-size: 24px;
     display: flex;
-    gap:60px ;
+    gap: 60px;
 }
-.copirite{
+
+.copirite {
     color: var(--subtitle-green-eko0-02);
     font-family: k2d;
     font-size: 24px;
+}
+/* nav */
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+    position: fixed;
+    background-color: aqua;
+}
+.nav-icons{
+    display: flex;
+    gap: 33px;
+}
+.pages-nav{
+    font-family: orbitron;
+    color: var(--subtitle-green-eko0-02);
+    font-size: 24px;
+    display: flex;
+    gap: 60px;
+}
+.menu{
+    height: 25px;
 }
