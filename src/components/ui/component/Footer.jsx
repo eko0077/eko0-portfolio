@@ -18,9 +18,10 @@ export default function Footer() {
             <a href="https://linktr.ee/eko0_zero"><img className="footer-icon" src="../src/assets/svg/linktree-dark.svg" alt="" /></a>
                 </div>
             </div>
-            <div className="page-footer">
-                <a href="">about me</a>
-                <a href="/projects">projects</a>
+            <div className="tools">
+              <img src="../src/assets/svg/dark_mode.svg" alt="" />
+             <div className="vertical-separation"></div>
+              <p>EN</p>
             </div>
             <p className="copirite">©eko0 zero</p>
            </div>
