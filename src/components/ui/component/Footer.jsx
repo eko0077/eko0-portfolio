@@ -19,8 +19,8 @@ export default function Footer() {
                 </div>
             </div>
             <div className="page-footer">
-                <a href="/home">about me</a>
-                <a href="">projects</a>
+                <a href="">about me</a>
+                <a href="/projects">projects</a>
             </div>
             <p className="copirite">©eko0 zero</p>
            </div>

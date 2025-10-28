@@ -13,7 +13,7 @@ export default function Nav() {
               <a href="/home"><img src="../src/assets/svg/paperclip.svg" alt="" /></a>
               <div className="vertical-separation"></div>
               <div className="pages-nav">
-                <a className="footer-icon" href="/about-me">
+                <a className="footer-icon" href="">
                   about me
                 </a>
                 <a className="footer-icon" href="/projects">
