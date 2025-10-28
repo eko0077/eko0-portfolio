@@ -5,7 +5,7 @@
     height: 100vh;
 }
 
-.portfolio {
+.page-title {
     height: 100px;
 }
 
@@ -69,7 +69,7 @@
     position: absolute;
     right: -160px;
     margin-top: 80px;
-    z-index: 20;
+    z-index: 1;
 }
 
 /* footer */
@@ -140,21 +140,10 @@
     padding: 40px;
     width: 100%;
     position: fixed;
-background-color: rgba(244, 244, 244, 0.6);
-backdrop-filter: blur(5px);
+    background-color: rgba(244, 244, 244, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 20px;
 }
-
-
-/* From https://css.glass */
-/* background: rgba(244, 244, 244, 0.17);
-
-
-backdrop-filter: blur(6.1px);
--webkit-backdrop-filter: blur(6.1px);
-    border: 1px solid rgba(244, 244, 244, 0.1); */
-
-
-
 
 .nav-icons {
     display: flex;
@@ -171,4 +160,22 @@ backdrop-filter: blur(6.1px);
 
 .menu {
     height: 25px;
+}
+
+/* projects */
+.list-type-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 115px;
+    padding: 120px 125px;
+
+}
+
+.type-projects {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-family: pixelify sans;
+    font-size: 64px;
+    color: var(--subtitle-green-eko0-01);
 }

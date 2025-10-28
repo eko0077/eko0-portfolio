@@ -24,15 +24,16 @@
    
 }
 a{
-    z-index: 20;
+text-decoration: none;
 }
 body{
     height: 100vh;
-     overflow-x:hidden;
+    overflow-x:hidden;
 
 }
 img {
 display: block;
+
 }
 .page{
     background-color:  var(--white-eko0);

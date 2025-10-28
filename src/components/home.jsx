@@ -14,7 +14,7 @@ export default function Home() {
       {/* add nav later */}
       <div className="first-section">
         <img
-          className="portfolio"
+          className="page-title"
           src="../src/assets/svg/portfolio.svg"
           alt=""
         />

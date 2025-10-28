@@ -10,13 +10,13 @@ export default function Nav() {
 
           <div className="nav">
             <div className="nav-icons">
-              <a href=""><img src="../src/assets/svg/paperclip.svg" alt="" /></a>
+              <a href="/home"><img src="../src/assets/svg/paperclip.svg" alt="" /></a>
               <div className="vertical-separation"></div>
               <div className="pages-nav">
-                <a className="footer-icon" href="/home">
+                <a className="footer-icon" href="/about-me">
                   about me
                 </a>
-                <a className="footer-icon" href="">
+                <a className="footer-icon" href="/projects">
                   projects
                 </a>
               </div>
