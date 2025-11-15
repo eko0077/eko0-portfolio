@@ -1,0 +1,68 @@
+/* title */
+h1{
+    color: #FCFDFF;
+text-align: center;
+font-family: "Prolinea Demo";
+font-size: 200px;
+font-weight: 950;
+}
+.name{
+    color: #B0FD64;
+text-align: center;
+font-family: Aeros;
+font-size: 30px;
+font-weight: 400;
+
+}
+.title{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+/* about */
+.about{
+    margin-top: 11vh;
+}
+.background-about {
+    /* faire forme en css */
+    position: absolute;
+    top: 110vh;
+    left: 7%;
+    width: 90%;
+    height: 100vh;
+}
+.about-title-section{
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+margin-left:17% ;
+}
+.about-title{
+    color: #B0FD64;
+text-align: center;
+font-family: IntraNet;
+font-size: 75px;
+font-weight: 500;
+letter-spacing: 12px;
+}
+.arrow-icon{
+   display: flex;
+align-items: center;
+gap: 7px; 
+}
+.eko0-img{
+    position: absolute;
+}
+.cv{
+    display: flex;
+padding: 8.769px 0;
+align-items: center;
+gap: 25px;
+color: #B0FD64;
+font-family: Aeros;
+font-size: 50px;
+font-weight: 400;
+
+}

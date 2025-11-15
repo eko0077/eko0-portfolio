@@ -20,10 +20,17 @@ text-decoration: none;
 }
 body{
     height: 100vh;
-    overflow-x:hidden;
 
 }
 img {
 display: block;
 
+}
+.page{
+    position: relative;
+    overflow-x: hidden;
+    height: 100vh;
+   background-color: #060606;
+   color: #ffffff;
+  
 }
