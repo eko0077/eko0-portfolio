@@ -11,14 +11,6 @@
     --black-eko0: #232323;
 }
 
-[data-theme="dark"] {
-    --white-eko0: #232323;
-    --title-green-eko0: #7EDD79;
-    --subtitle-green-eko0-01: #15BC55;
-    --subtitle-green-eko0-02: #209B62;
-    --text: #D3FFBC;
-    --black-eko0: #F4F4F4;
-}
 *{
     margin: 0px;
    
@@ -34,15 +26,4 @@ body{
 img {
 display: block;
 
-}
-.page{
-    background-color:  var(--white-eko0);
-    
-}
-.separation{
-    height: 3px;
-    background-color: var(--subtitle-green-eko0-02);
-    margin-left: 40px;
-    margin-right: 40px;
-    
 }

@@ -9,31 +9,7 @@ import React from "react";
 export default function Home() {
   return (
     <div className="page">
-      <Nav />
-      {/* add nav later */}
-      <div className="first-section">
-        <img
-          className="page-title"
-          src="../src/assets/svg/projects.svg"
-          alt=""
-        />
-      </div>
-      <div className="separation"> </div>
-      <div className="list-type-projects">
-          <a  className="type-projects" href="">
-          <img src="../src/assets/svg/folder.svg" alt="" /> <p>all projects</p>
-        </a>
-       <a  className="type-projects" href="">
-          <img src="../src/assets/svg/folder.svg" alt="" /> <p>ui/ux</p>
-        </a>
-        <a  className="type-projects" href="">
-          <img src="../src/assets/svg/folder.svg" alt="" /> <p>graphic design</p>
-        </a>
-       <a  className="type-projects" href="">
-          <img src="../src/assets/svg/folder.svg" alt="" /> <p>all projects</p>
-        </a>
-      </div>
-      <Footer />
+project
     </div>
   );
 }

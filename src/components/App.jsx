@@ -1,32 +1,18 @@
 import { motion } from "framer-motion";
 import ThemeToggle from "./ui/items/ThemeToggle";
-import { body } from "framer-motion/client";
+import Footer from "./ui/component/Footer";
+import { body, path } from "framer-motion/client";
 import { useEffect } from "react";
+import React from "react";
 
 
-export default function App() {
-  useEffect(() => {
-    const handleWheel = (event) => {
-      console.log(event.deltaY);
-
-      if (event.deltaY > 0) {
-        window.location.href = "/home";
-      }
-    };
-
-    window.addEventListener("wheel", handleWheel);
-
-    return () => window.removeEventListener("wheel", handleWheel);
-  }, []);
+export default function Home() {
   return (
     <div className="page">
-      <a className="first-page" href="/home">
-        <img class="eko0" src="../src/assets/svg/eko0.svg" alt="" />
-        <div className="accion">
-          <p className="accion-text"> scroll or click </p>
-          <img src="../src/assets/svg/arrow-bottom.svg" alt="" />
-        </div>
-      </a>
+      <h1>portfolio</h1>
+      <div className="name">eko0 zero - clara del vecchio</div>
+      {/* about me  */}
+      
     </div>
   );
 }
