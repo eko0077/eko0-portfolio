@@ -13,15 +13,20 @@ export default function Home() {
         <div className="name">eko0 zero - clara del vecchio</div>
       </div>
       {/* about me  */}
-      <img
-        className="background-about"
+
+      {/* <img className="background-about"
         src="../src/assets/svg/background-about.png"
         alt=""
-      />
-      <div className="about">
-        <div className="about-title-section">
+      /> */}
+            <div className="about-title-section">
           <h3 className="about-title">About me</h3>
         </div>
+    <div class="shape">
+      <span className="rectangles"></span>
+      <span className=" triangles-01"></span>
+
+      <div className="about ">
+  
         <div className="arrow-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -288,6 +293,7 @@ export default function Home() {
             />
           </svg>
         </div>
+      </div>
       </div>
     </div>
   );
