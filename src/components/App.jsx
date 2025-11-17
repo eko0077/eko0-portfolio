@@ -14,19 +14,8 @@ export default function Home() {
       </div>
       {/* about me  */}
 
-      {/* <img className="background-about"
-        src="../src/assets/svg/background-about.png"
-        alt=""
-      /> */}
-            <div className="about-title-section">
-          <h3 className="about-title">About me</h3>
-        </div>
-    <div class="shape">
-      <span className="rectangles"></span>
-      <span className=" triangles-01"></span>
-
-      <div className="about ">
-  
+      <div className="about-title-section">
+        <h3 className="about-title">About me</h3>
         <div className="arrow-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -265,35 +254,46 @@ export default function Home() {
             </defs>
           </svg>
         </div>
-
-        <p className="about-text">
-          Hi! I’m Clara, but you can call me eko0 !I was born in March 2008 and
-          I'm passionate about UI/UX and graphic design. I like turning ideas
-          into visual experiences. I'm currently learning 3D design with Blender
-          to expand my creative skills and bring more depth and emotion to my
-          work. My goal is to blend design, storytelling, and technology to
-          create experiences that are both intuitive and inspiring.
-        </p>
-        {/* <img className="eko0-img" src="../src/assets/img/eko0-about-stikers.png" alt="" /> */}
-        <div className="cv">
-          <p>see my cv</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="42"
-            height="42"
-            viewBox="0 0 42 42"
-            fill="none"
-          >
-            <path
-              d="M3.00003 38.8857L38.8857 3.00004M38.8857 3.00004H3.00003M38.8857 3.00004V38.8857"
-              stroke="#B0FD64"
-              stroke-width="6"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </div>
       </div>
+
+      <div class="shape">
+        <span className="rectangles"></span>
+        <span className=" triangles-01"></span>
+ <span className=" triangles-02"></span>
+ <span className=" triangles-03"></span> <span className=" triangles-04"></span><span className=" triangles-05"></span><span className=" triangles-06"></span>
+        <div className="about ">
+        
+
+          <p className="about-text">
+            Hi! I’m Clara, but you can call me eko0 !I was born in March 2008
+            and I'm passionate about UI/UX and graphic design. I like turning
+            ideas into visual experiences. I'm currently learning 3D design with
+            Blender to expand my creative skills and bring more depth and
+            emotion to my work. My goal is to blend design, storytelling, and
+            technology to create experiences that are both intuitive and
+            inspiring.
+          </p>
+          
+          {/* <img className="eko0-img" src="../src/assets/img/eko0-about-stikers.png" alt="" /> */}
+          <div className="cv">
+            <p>see my cv</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+            >
+              <path
+                d="M3.00003 38.8857L38.8857 3.00004M38.8857 3.00004H3.00003M38.8857 3.00004V38.8857"
+                stroke="#B0FD64"
+                stroke-width="6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   );
