@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import ThemeToggle from "./ui/items/ThemeToggle";
-import Footer from "./ui/component/Footer";
 import { body, path } from "framer-motion/client";
 import { useEffect } from "react";
 import React from "react";
@@ -546,7 +544,7 @@ export default function Home() {
           </svg></a>
         </div>
       </div>
-      <div className="see-projects">
+      <a className="see-projects" href="Project">
         <p>see projects</p>
         <svg 
         className="arrow"
@@ -564,7 +562,7 @@ export default function Home() {
             stroke-linejoin="round"
           />
         </svg>
-      </div>
+        </a>
     </div>
   );
 }
