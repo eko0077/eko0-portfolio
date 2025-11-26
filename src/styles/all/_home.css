@@ -248,7 +248,14 @@ gap: 7px;
     height: 1000px;
     right: -30px;
     top: 135vh;
-    z-index: 20;
+    z-index: 20;  
+    transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    
+
+}
+.eko0-img:hover{
+  transform: rotateY(15deg);
+  
 }
 .cv{
     display: flex;
@@ -262,6 +269,7 @@ font-size: 40px;
 font-weight: 400;
 margin-top: 90px;
 margin-right: 50px;
+  transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 .about-text{
     color: #FFF;
@@ -295,6 +303,14 @@ padding-left: 50px;
 justify-content: space-between;
 align-items: flex-start;
 gap: 8px;
+
+}
+.soft-icon svg{
+  transition: all 0.25s ease-out;}
+.soft-icon svg:hover {
+margin-top: -10px;
+border-radius: 25px;
+
 }
 .contact{
   display: flex;
@@ -314,7 +330,16 @@ font-weight: 400;
 padding-left: 50px;
 align-items: center;
 gap: 24px;
+z-index: 100;
 }
+.contact-icon svg{
+  transition: all 0.25s ease-out;
+}
+.contact-icon svg:hover {
+margin-top: -20px;
+
+}
+
 /* see projects */
 .see-projects{
   color: #B0FD64;
@@ -329,4 +354,32 @@ display: flex;
 gap: 50px ;
 justify-content:center;
 align-items: center;
+  transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 } 
+.arrow{
+  transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  z-index: 100;
+}
+.arrow:hover{
+transform: rotate(90deg);
+}
+.cv .arrow{
+  transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  z-index: 100;
+}
+.cv:hover .arrow{
+transform: rotate(90deg);
+}
+.cv:hover {
+gap: 50px
+}
+.see-projects .arrow{
+  transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  z-index: 100;
+}
+.see-projects:hover .arrow{
+transform: rotate(90deg);
+}
+.see-projects:hover{
+gap: 100px
+}
