@@ -279,8 +279,7 @@ export default function Home() {
             technology to create experiences that are both intuitive and
             inspiring.
           </p>
-
-          <div className="cv">
+          <a className="cv" href="">
             <p>see my cv</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -297,11 +296,11 @@ export default function Home() {
                 stroke-linejoin="round"
               />
             </svg>
-          </div>
+          </a>
           <div className="softs">
             <p className="soft">Software</p>
             <div className="soft-icon">
-              <svg
+             <a href="https://www.figma.com/fr-fr/"> <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="92"
                 height="90"
@@ -320,6 +319,8 @@ export default function Home() {
                   </clipPath>
                 </defs>
               </svg>
+              </a>
+              <a href="https://code.visualstudio.com/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="94"
@@ -338,7 +339,8 @@ export default function Home() {
                     <rect width="94" height="90" fill="white" />
                   </clipPath>
                 </defs>
-              </svg>
+              </svg></a>
+              <a href="https://www.blender.org/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="91"
@@ -350,7 +352,8 @@ export default function Home() {
                   d="M77.3789 0C84.6685 0.000100335 90.5781 5.90961 90.5781 13.1992V76.8008C90.578 84.0903 84.6684 89.9999 77.3789 90H13.1982C5.90883 89.9998 0.000134819 84.0902 0 76.8008V13.1992C0 5.90968 5.90875 0.000213227 13.1982 0H77.3789ZM45.498 20.1172C44.1453 19.1236 41.8715 19.1287 40.3838 20.1221C38.8796 21.1263 38.7085 22.7912 40.0449 23.8428L40.042 23.8447L48.6387 30.5303L22.4326 30.5566H22.3965C20.2297 30.5594 18.1478 31.9185 17.7354 33.6377C17.312 35.3857 18.7806 36.8366 21.0352 36.8447V36.8506L34.3174 36.8242L10.6143 54.2197L10.5205 54.2852C8.28513 55.9202 7.56435 58.6433 8.97168 60.3652C10.4016 62.1187 13.4408 62.1216 15.7012 60.376L28.6357 50.2578C28.6327 50.2791 28.4436 51.6313 28.46 52.4424C28.4765 53.2679 28.7517 54.8659 29.1641 56.1172C30.0545 58.8094 31.5499 61.2832 33.5449 63.3652C35.6844 65.614 38.2952 67.4069 41.208 68.626C44.3782 69.962 47.808 70.6429 51.2725 70.624C54.7364 70.6306 58.1635 69.9383 61.3291 68.5938C64.2397 67.3632 66.8488 65.5638 68.9873 63.3105C70.979 61.2216 72.4719 58.7435 73.3643 56.0488C74.2223 53.4381 74.4573 50.6768 74.0518 47.9678C73.6656 45.3725 72.7137 42.8835 71.2578 40.6621C69.9091 38.5958 68.1851 36.7764 66.166 35.291H66.1709L45.5527 20.1562L45.498 20.1172ZM51.2646 36.8164C54.7183 36.8112 58.0154 37.8942 60.6084 39.9053C61.9282 40.9331 63.001 42.1505 63.7764 43.499C64.5789 44.8808 65.0683 46.4088 65.2119 47.9834C65.3576 49.597 65.1332 51.2219 64.5547 52.7441C63.937 54.3473 62.9629 55.8058 61.7051 57.0195C59.0378 59.6167 55.3088 61.0885 51.2695 61.0938C47.2275 61.1042 43.4963 59.6427 40.8291 57.0508C39.5696 55.8419 38.5981 54.3869 37.9805 52.7861C37.4145 51.2801 37.1905 49.6762 37.3242 48.0811C37.4579 46.4858 37.9462 44.9358 38.7559 43.5352C39.5613 42.1509 40.6374 40.9276 41.9258 39.9316C44.5161 37.9126 47.8136 36.8217 51.2646 36.8164ZM51.5645 40.8408C49.3442 40.8258 47.1894 41.5617 45.4814 42.918C43.8536 44.2324 42.7759 46.0884 42.6494 48.1914C42.5257 50.3523 43.4355 52.3581 45.0303 53.8486C46.789 55.4529 49.1338 56.3376 51.5645 56.3145C53.9933 56.3372 56.3352 55.4524 58.0918 53.8486C59.6867 52.358 60.5944 50.3521 60.4707 48.1885C60.3469 46.0881 59.2714 44.2324 57.6436 42.918C56.0488 41.6299 53.9016 40.8409 51.5645 40.8408Z"
                   fill="#D9FFD9"
                 />
-              </svg>
+              </svg></a>
+              <a href="https://www.adobe.com/ch_fr/products/illustrator.html">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="92"
@@ -385,6 +388,8 @@ export default function Home() {
                   </clipPath>
                 </defs>
               </svg>
+              </a>
+              <a href="https://www.adobe.com/ch_de/products/aftereffects.html">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="93"
@@ -418,7 +423,8 @@ export default function Home() {
                     <rect width="93" height="90" fill="white" />
                   </clipPath>
                 </defs>
-              </svg>
+              </svg></a>
+              <a href="https://www.adobe.com/ch_fr/products/photoshop.html">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="92"
@@ -453,6 +459,7 @@ export default function Home() {
                   </clipPath>
                 </defs>
               </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -472,6 +479,7 @@ export default function Home() {
               fill="#D9FFD9"
             />
           </svg>
+     
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="90"
@@ -503,6 +511,7 @@ export default function Home() {
               </clipPath>
             </defs>
           </svg>
+      
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="74"
@@ -526,9 +535,21 @@ export default function Home() {
       </div>
       <div className="see-projects">
         <p>see projects</p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74" fill="none">
-  <path d="M5 68.6621L68.6621 5M68.6621 5L5 5M68.6621 5L68.6621 68.6621" stroke="#B0FD64" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="74"
+          height="74"
+          viewBox="0 0 74 74"
+          fill="none"
+        >
+          <path
+            d="M5 68.6621L68.6621 5M68.6621 5L5 5M68.6621 5L68.6621 68.6621"
+            stroke="#B0FD64"
+            stroke-width="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
       </div>
     </div>
   );
