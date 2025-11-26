@@ -539,7 +539,7 @@ export default function App() {
           </svg></a>
         </div>
       </div>
-      <a className="see-projects" href="Project">
+      <a className="see-projects" href="projects">
         <p>see projects</p>
         <svg 
         className="arrow"
