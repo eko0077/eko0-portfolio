@@ -2,7 +2,7 @@ export default function Project() {
   return (
     <div className="page">
       <div className="viewport">
-        <a href="index">
+        <a href="/">
           <div className="back">
             <svg
               className="back-arrow"
