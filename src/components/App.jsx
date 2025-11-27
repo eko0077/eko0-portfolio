@@ -497,7 +497,7 @@ export default function App() {
               fill="#D9FFD9"
             />
           </svg></a>
-          <a href=" mail ">
+          <a href="mailto:eko0.zero.51@gmail.com">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="93"
