@@ -39,13 +39,13 @@ height: 40px;
 .section{
     color: #B0FD64;
 font-family: "Pixelify Sans";
-font-size: 35px;
+font-size: 55px;
 font-weight: 400;
 display: flex;
 padding: 5px 0;
 align-items: center;
-gap: 20px;
-height: 45px;
+gap: 40px;
+height: 55px;
 }
 .category{
     display: flex;

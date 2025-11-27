@@ -2,7 +2,7 @@ export default function Project() {
   return (
     <div className="page">
       <div className="viewport">
-        <a href="">
+        <a href="index">
           <div className="back">
             <svg
               className="back-arrow"
@@ -103,7 +103,7 @@ export default function Project() {
             </div>
           </div>
           {/* project */}
-          
+
         </div>
       </div>
     </div>
