@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default function Project() {
   return (
     <div className="page">
@@ -41,7 +44,7 @@ export default function Project() {
                 <p>]</p>
               </div>
             </div>
-              <div className="section">
+            <div className="section">
               <svg
                 className="section"
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +64,7 @@ export default function Project() {
                 <p>]</p>
               </div>
             </div>
-              <div className="section">
+            <div className="section">
               <svg
                 className="section"
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +84,7 @@ export default function Project() {
                 <p>]</p>
               </div>
             </div>
-              <div className="section">
+            <div className="section">
               <svg
                 className="section"
                 xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +106,43 @@ export default function Project() {
             </div>
           </div>
           {/* project */}
+          <div className="projects">
+            <div className="projects-section">
+              <div className="projects-title">
+                <h4 className="theme">UI/UX </h4>
+                <h5 className="name-p">Nela</h5>
+              </div>
+              <p className="projects-text">
+                small text ghfvghjkv fghjfg kj jhglhj gnm hjg jhklg k gjhlglmhj
+                gjkh jlkmh njl. h fkfghj ghj hjl hjghjl hjlg mbhnmb ,mn jhjklhg
+                hjk khjjk l.m,n.jk.h jkmjn .jkh knhhjk. h; nm,b uk;h
+              </p>
 
+              <a className="see-p" href="">
+                <p>see project</p>
+                <svg
+                  className="arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                >
+                  <path
+                    d="M3.00003 38.8857L38.8857 3.00004M38.8857 3.00004H3.00003M38.8857 3.00004V38.8857"
+                    stroke="#B0FD64"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div className="img-p-section">
+            <img className="p-img" src="../src/assets/img/nela-img.png" alt="" />
+            <p>06.2025</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

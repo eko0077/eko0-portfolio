@@ -23,18 +23,24 @@ scale: 1.1;
 .back-arrow{
 height: 40px;
 }
+
 .scroll{
     height: 100vh;
-    overflow: hidden;
+    position: relative;
+    display: inline-flex;
+    flex-direction:row;
+    gap: 40vh;
+     min-width: 100vw;
 }
 .nav{
     margin-top: 30vh;
     margin-bottom: 30vh;
-    margin-left: 10vw;
+    margin-left: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 55vh;
+        min-width: 800px;
 }
 .section{
     color: #B0FD64;
@@ -46,12 +52,91 @@ padding: 5px 0;
 align-items: center;
 gap: 40px;
 height: 55px;
+
 }
 .category{
     display: flex;
     gap: 25px;
       transition: all 0.25s ease-out;
+
 }
 .section:hover .category{
      gap: 50px;
+}
+
+/* projects */
+.projects{
+display: flex;
+flex-direction: row;
+gap: 10vh;
+}
+.projects-section{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-end;
+margin-top: 10vh;
+margin-bottom: 10vh;
+}
+.projects-title{
+   display: flex;
+flex-direction: column;
+align-items: flex-end;
+gap: 1vh; 
+}
+.theme{
+    color: #B0FD64;
+font-family: IntraNet;
+font-size: 60px;
+font-weight: 500;
+line-height: 80px;
+letter-spacing: 16px;
+}
+.name-p{
+    color: #B0FD64;
+text-align: right;
+font-family: Aeros;
+font-size: 50px;
+}
+.projects-text{
+color: #FFF;
+text-align: right;
+font-family: K2D;
+font-size: 26px;
+font-weight: 300;
+width: 500px;
+}
+.see-p{
+    color: #B0FD64;
+font-family: Aeros;
+font-size: 35px;
+font-weight: 300;
+display: flex;
+justify-content: right;
+align-items: center;
+gap: 40px;
+  transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.see-p:hover .arrow{
+transform: rotate(90deg);
+}
+.see-p:hover {
+gap: 80px
+}
+
+.img-p-section{
+display: flex;
+flex-direction: column;
+align-items: end;
+justify-content: center;
+color: #B0FD64;
+text-align: right;
+font-family: K2D;
+font-size: 20px;
+font-weight: 400;
+height: 70vh;
+aspect-ratio: 535/301;
+margin-top: 15vh;
+
 }
