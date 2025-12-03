@@ -1,7 +1,16 @@
 import { useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 export default function Project() {
+  useEffect(() => {
+    (async () => {
+      const gsap = (await import("gsap")).default;
+      const { ScrollTrigger } = await import("gsap/ScrollTrigger");
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Tes animations ici
+    })();
+  }, []);
+
   return (
     <div className="page">
       <div className="viewport">
@@ -139,8 +148,12 @@ export default function Project() {
               </a>
             </div>
             <div className="img-p-section">
-            <img className="p-img" src="../src/assets/img/nela-img.png" alt="" />
-            <p>06.2025</p>
+              <img
+                className="p-img"
+                src="../src/assets/img/nela-img.png"
+                alt=""
+              />
+              <p>06.2025</p>
             </div>
           </div>
         </div>
