@@ -14,6 +14,7 @@
   z-index: 100;
   top: 5vh;
   left: 5vh;
+  backdrop-filter: blur(3px);
   transition: all 0.25s ease-out;
 }
 .back:hover {
@@ -29,7 +30,7 @@
   position: relative;
   display: inline-flex;
   flex-direction: row;
-  gap: 50vh;
+  gap: 30vh;
 }
 .nav {
   margin-top: 30vh;
@@ -72,14 +73,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: start;
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
 .projects-title {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: start;
+  text-align: start;
   gap: 1vh;
 }
 .theme {
@@ -92,13 +94,13 @@
 }
 .name-p {
   color: #b0fd64;
-  text-align: right;
+  text-align: left;
   font-family: Aeros;
-  font-size: 50px;
+  font-size: 45px;
 }
 .projects-text {
   color: #fff;
-  text-align: right;
+  text-align: left;
   font-family: K2D;
   font-size: 26px;
   font-weight: 300;
@@ -110,7 +112,7 @@
   font-size: 35px;
   font-weight: 300;
   display: flex;
-  justify-content: right;
+  justify-content: left;
   align-items: center;
   gap: 40px;
   transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
@@ -126,10 +128,10 @@
 .img-p-section {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: start;
   justify-content: center;
   color: #b0fd64;
-  text-align: right;
+  text-align: left;
   font-family: K2D;
   font-size: 26px;
   font-weight: 400;
