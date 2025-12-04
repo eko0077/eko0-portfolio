@@ -134,7 +134,7 @@ export default function Project() {
           </div>
 
           {/* project */}
-          <div className="projects">
+          <div className="projects" id="ui">
             <div className="img-p-section">
               <img
                 className="p-img"
@@ -176,7 +176,7 @@ export default function Project() {
             </div>
           </div>
           {/* project */}
-          <div className="projects">
+          <div className="projects" id="ui">
             <div className="img-p-section">
               <img
                 className="p-img"
@@ -218,7 +218,7 @@ export default function Project() {
             </div>
           </div>
           {/* project */}
-          <div className="projects">
+          <div className="projects" id="gd">
             <div className="img-p-section">
               <img
                 className="p-img"
@@ -260,7 +260,7 @@ export default function Project() {
             </div>
           </div>
           {/* project */}
-          <div className="projects">
+          <div className="projects" id="cd">
             <div className="img-p-section">
               <img
                 className="p-img"
@@ -302,7 +302,7 @@ export default function Project() {
             </div>
           </div>
           {/* project */}
-          <div className="projects">
+          <div className="projects" id="ui">
             <div className="img-p-section">
               <img
                 className="p-img"
@@ -344,7 +344,7 @@ export default function Project() {
             </div>
           </div>
           {/* project */}
-          <div className="projects">
+          <div className="projects" id="gd">
             <div className="img-p-section">
               <img
                 className="p-img"
@@ -386,7 +386,7 @@ export default function Project() {
             </div>
           </div>
           {/* project */}
-          <div className="projects">
+          <div className="projects" id="cg">
             <div className="img-p-section">
               <img
                 className="p-img"
