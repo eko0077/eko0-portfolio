@@ -11,7 +11,7 @@ export default function Project() {
         scrollTrigger: {
           trigger: ".page",
           start: "top top",
-          end: "bottom+=500% top",
+          end: "bottom+=2500% top",
           scrub: true,
           pin: true,
           markers: false,
@@ -231,6 +231,174 @@ export default function Project() {
               <div className="projects-title">
                 <h4 className="theme">graphic design</h4>
                 <h5 className="name-p">Double Page</h5>
+              </div>
+              <p className="projects-text">
+                small text ghfvghjkv fghjfg kj jhglhj gnm hjg jhklg k gjhlglmhj
+                gjkh jlkmh njl. h fkfghj ghj hjl hjghjl hjlg mbhnmb ,mn jhjklhg
+                hjk khjjk l.m,n.jk.h jkmjn .jkh knhhjk. h; nm,b uk;h
+              </p>
+
+              <a className="see-p" href="">
+                <p>see project</p>
+                <svg
+                  className="arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                >
+                  <path
+                    d="M3.00003 38.8857L38.8857 3.00004M38.8857 3.00004H3.00003M38.8857 3.00004V38.8857"
+                    stroke="#B0FD64"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          {/* project */}
+          <div className="projects">
+            <div className="img-p-section">
+              <img
+                className="p-img"
+                src="../src/assets/img/png-tuber.png"
+                alt=""
+              />
+              <p>04.2025</p>
+            </div>
+            <div className="projects-section">
+              <div className="projects-title">
+                <h4 className="theme">character design</h4>
+                <h5 className="name-p">PNG Tuber</h5>
+              </div>
+              <p className="projects-text">
+                small text ghfvghjkv fghjfg kj jhglhj gnm hjg jhklg k gjhlglmhj
+                gjkh jlkmh njl. h fkfghj ghj hjl hjghjl hjlg mbhnmb ,mn jhjklhg
+                hjk khjjk l.m,n.jk.h jkmjn .jkh knhhjk. h; nm,b uk;h
+              </p>
+
+              <a className="see-p" href="">
+                <p>see project</p>
+                <svg
+                  className="arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                >
+                  <path
+                    d="M3.00003 38.8857L38.8857 3.00004M38.8857 3.00004H3.00003M38.8857 3.00004V38.8857"
+                    stroke="#B0FD64"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          {/* project */}
+          <div className="projects">
+            <div className="img-p-section">
+              <img
+                className="p-img"
+                src="../src/assets/img/UID-CP-IM21-DelVecchioClara@2x.png"
+                alt=""
+              />
+              <p>01.2025</p>
+            </div>
+            <div className="projects-section">
+              <div className="projects-title">
+                <h4 className="theme">ui / ux</h4>
+                <h5 className="name-p">Customize Product</h5>
+              </div>
+              <p className="projects-text">
+                small text ghfvghjkv fghjfg kj jhglhj gnm hjg jhklg k gjhlglmhj
+                gjkh jlkmh njl. h fkfghj ghj hjl hjghjl hjlg mbhnmb ,mn jhjklhg
+                hjk khjjk l.m,n.jk.h jkmjn .jkh knhhjk. h; nm,b uk;h
+              </p>
+
+              <a className="see-p" href="">
+                <p>see project</p>
+                <svg
+                  className="arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                >
+                  <path
+                    d="M3.00003 38.8857L38.8857 3.00004M38.8857 3.00004H3.00003M38.8857 3.00004V38.8857"
+                    stroke="#B0FD64"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          {/* project */}
+          <div className="projects">
+            <div className="img-p-section">
+              <img
+                className="p-img"
+                src="../src/assets/img/miku-01.png"
+                alt=""
+              />
+              <p>10.2024</p>
+            </div>
+            <div className="projects-section">
+              <div className="projects-title">
+                <h4 className="theme">graphic design</h4>
+                <h5 className="name-p">Logo Type</h5>
+              </div>
+              <p className="projects-text">
+                small text ghfvghjkv fghjfg kj jhglhj gnm hjg jhklg k gjhlglmhj
+                gjkh jlkmh njl. h fkfghj ghj hjl hjghjl hjlg mbhnmb ,mn jhjklhg
+                hjk khjjk l.m,n.jk.h jkmjn .jkh knhhjk. h; nm,b uk;h
+              </p>
+
+              <a className="see-p" href="">
+                <p>see project</p>
+                <svg
+                  className="arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                >
+                  <path
+                    d="M3.00003 38.8857L38.8857 3.00004M38.8857 3.00004H3.00003M38.8857 3.00004V38.8857"
+                    stroke="#B0FD64"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          {/* project */}
+          <div className="projects">
+            <div className="img-p-section">
+              <img
+                className="p-img"
+                src="../src/assets/img/character.png"
+                alt=""
+              />
+              <p>10.2024</p>
+            </div>
+            <div className="projects-section">
+              <div className="projects-title">
+                <h4 className="theme">character design</h4>
+                <h5 className="name-p">Character Design</h5>
               </div>
               <p className="projects-text">
                 small text ghfvghjkv fghjfg kj jhglhj gnm hjg jhklg k gjhlglmhj
