@@ -86,7 +86,7 @@ h1 {
   height: 140px;
   bottom: -140px;
   left: 600px;
-right: 0px;
+  right: 0px;
 }
 .triangles-01::before {
   content: "";
@@ -115,7 +115,7 @@ right: 0px;
   position: absolute;
   width: 60px;
   height: 60px;
-left: 640px;
+  left: 640px;
   top: -60px;
   background-color: rgba(255, 255, 255, 0.25);
   z-index: 0;
@@ -125,7 +125,7 @@ left: 640px;
   position: absolute;
   width: 120px;
   height: 120px;
-left: 580px;
+  left: 580px;
   top: -120px;
   background-color: #000000;
   border-radius: 500px;
@@ -200,7 +200,7 @@ left: 580px;
   width: 60px;
   height: 60px;
   left: 540px;
-bottom: -60px;
+  bottom: -60px;
   background-color: rgba(255, 255, 255, 0.25);
   z-index: 0;
 }
@@ -210,7 +210,7 @@ bottom: -60px;
   width: 120px;
   height: 120px;
   left: 480px;
-bottom: -120px;
+  bottom: -120px;
   background-color: #000000;
   border-radius: 500px;
   z-index: 1;
@@ -247,7 +247,7 @@ bottom: -120px;
   transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 .eko0-img:hover {
-  transform: rotateY(15deg);
+  transform: rotate(5deg);
 }
 .cv {
   display: flex;
@@ -262,7 +262,7 @@ bottom: -120px;
   margin-top: 80px;
   margin-right: 50px;
   transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 .about-text {
   color: #fff;
@@ -346,4 +346,54 @@ padding-bottom: 100px;
 }
 .see-projects:hover {
   gap: 100px;
+}
+.info {
+  display: none;
+}
+@media (max-width: 1440px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45vh;
+    gap: 5vh;
+  }
+  .info .text {
+    color: #b0fd64;
+    text-align: center;
+    font-family: IntraNet;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.76px;
+  }
+  .chiffre {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-family: Aeros;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .pdf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    gap: 10px;
+  }
+  .arrowe {
+    height: 23px;
+  }
+  .pdf .arrowe {
+    transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    z-index: 100;
+  }
+  .pdf:hover .arrowe {
+    transform: rotate(90deg);
+  }
+  .pdf:hover {
+    gap: 30px;
+  }
+  .all {
+    display: none;
+  }
 }
