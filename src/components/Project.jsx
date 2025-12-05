@@ -1,33 +1,68 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
-export default function Project() {
+export default function Component() {
+  const [activeFilter, setActiveFilter] = useState("all");
+  let horizontalTween;
+
+  // Fonction pour recalculer la largeur
+  const updateScrollWidth = () => {
+    const scrollWidth = document.querySelector(".scroll").scrollWidth;
+    const viewportWidth = window.innerWidth;
+    return scrollWidth - viewportWidth;
+  };
+
+  // Initialisation GSAP
   useEffect(() => {
     (async () => {
       const gsap = (await import("gsap")).default;
       const { ScrollTrigger } = await import("gsap/ScrollTrigger");
       gsap.registerPlugin(ScrollTrigger);
 
-      var tl = gsap.timeline({
+      const maxTranslate = updateScrollWidth();
+
+      horizontalTween = gsap.to(".scroll", {
+        x: -maxTranslate,
+        ease: "none",
+        duration: 1,
         scrollTrigger: {
           trigger: ".page",
           start: "top top",
           end: "bottom+=2500% top",
           scrub: true,
           pin: true,
-          markers: false,
         },
-      });
-      const scrollWidth = document.querySelector(".scroll").scrollWidth;
-      const viewportWidth = window.innerWidth;
-      const maxTranslate = scrollWidth - viewportWidth;
-
-      tl.to(".scroll", {
-        x: -maxTranslate,
-        duration: 1,
-        ease: "none",
       });
     })();
   }, []);
+
+  // Gestion du filtrage
+  const filterProjects = async (type) => {
+    const gsap = (await import("gsap")).default;
+    setActiveFilter(type);
+
+    const projects = document.querySelectorAll(".projects");
+
+    projects.forEach((project) => {
+      if (type === "all") {
+        project.style.display = "flex";
+      } else {
+        project.style.display = project.classList.contains(type)
+          ? "flex"
+          : "none";
+      }
+    });
+
+    // Recalculer la distance de scroll
+    const maxTranslate = updateScrollWidth();
+
+    if (horizontalTween) {
+      horizontalTween.vars.x = -maxTranslate;
+      horizontalTween.invalidate();
+    }
+
+    const { ScrollTrigger } = await import("gsap/ScrollTrigger");
+    ScrollTrigger.refresh();
+  };
 
   return (
     <div className="page">
@@ -50,8 +85,9 @@ export default function Project() {
           </div>
         </a>
         <div className="scroll">
+          {/* NAV */}
           <div className="nav">
-            <div className="section">
+            <div className="section" onClick={() => filterProjects("all")}>
               <svg
                 className="section"
                 xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +107,7 @@ export default function Project() {
                 <p>]</p>
               </div>
             </div>
-            <div className="section">
+            <div className="section"onClick={() => filterProjects("ui")}>
               <svg
                 className="section"
                 xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +127,7 @@ export default function Project() {
                 <p>]</p>
               </div>
             </div>
-            <div className="section">
+            <div className="section" onClick={() => filterProjects("gd")}>
               <svg
                 className="section"
                 xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +147,7 @@ export default function Project() {
                 <p>]</p>
               </div>
             </div>
-            <div className="section">
+            <div className="section" onClick={() => filterProjects("cd")}>
               <svg
                 className="section"
                 xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +170,7 @@ export default function Project() {
           </div>
 
           {/* project */}
-          <div className="projects" id="ui">
+         <div  className="projects ui">
             <div className="img-p-section">
               <img
                 className="p-img"
@@ -176,7 +212,7 @@ export default function Project() {
             </div>
           </div>
           {/* project */}
-          <div className="projects" id="ui">
+          <div  className="projects ui">
             <div className="img-p-section">
               <img
                 className="p-img"
@@ -218,7 +254,7 @@ export default function Project() {
             </div>
           </div>
           {/* project */}
-          <div className="projects" id="gd">
+          <div className="projects gd">
             <div className="img-p-section">
               <img
                 className="p-img"
@@ -260,7 +296,7 @@ export default function Project() {
             </div>
           </div>
           {/* project */}
-          <div className="projects" id="cd">
+          <div  className="projects cd">
             <div className="img-p-section">
               <img
                 className="p-img"
@@ -302,7 +338,7 @@ export default function Project() {
             </div>
           </div>
           {/* project */}
-          <div className="projects" id="ui">
+     <div className="projects ui">
             <div className="img-p-section">
               <img
                 className="p-img"
@@ -344,7 +380,7 @@ export default function Project() {
             </div>
           </div>
           {/* project */}
-          <div className="projects" id="gd">
+          <div  className="projects gd">
             <div className="img-p-section">
               <img
                 className="p-img"
@@ -386,7 +422,7 @@ export default function Project() {
             </div>
           </div>
           {/* project */}
-          <div className="projects" id="cg">
+          <div  className="projects cd">
             <div className="img-p-section">
               <img
                 className="p-img"
