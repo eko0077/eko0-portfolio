@@ -5,7 +5,7 @@ export default function App() {
         <p className="text">
           Please open the site on desktop <br /> or a bigger screen
         </p>
-        <p className="chiffre"> > 1440</p>
+        <p className="chiffre"> {">"} 1440</p>
         <div className="pdf">
           <p className="text">see pdf version</p>
           <svg
