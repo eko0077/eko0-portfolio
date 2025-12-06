@@ -2,6 +2,22 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Component() {
   const [activeFilter, setActiveFilter] = useState("all");
+    const [isAtTop, setIsAtTop] = useState(true);
+  useEffect(() => {
+    const onScroll = () => {
+      setIsAtTop(window.scrollY === 0);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const handleBackOrTop = () => {
+    if (!isAtTop) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      window.history.back();
+    }
+  };
   const tweenRef = useRef(null);
 
   const updateScrollWidth = () => {
@@ -69,7 +85,7 @@ export default function Component() {
   return (
     <div className="page">
       <div className="viewport">
-        <a onClick={() => window.history.back()}>
+        <a onClick={handleBackOrTop}>
           <div className="back">
             <svg
               className="back-arrow"
@@ -465,10 +481,6 @@ export default function Component() {
               </a>
             </div>
           </div>
-          {/* return */}
-          <a href="#nav" className="return"><svg className="r-arrow" xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74" fill="none">
-  <path d="M68.6621 68.6621L5 5M5 5L68.6621 5M5 5L5 68.6621" stroke="#B0FD64" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg><p className="r-text">Back to start</p></a>
         </div>
       </div>
     </div>
