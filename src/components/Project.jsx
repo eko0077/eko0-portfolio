@@ -1,17 +1,18 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Component() {
   const [activeFilter, setActiveFilter] = useState("all");
-  let horizontalTween;
+  const tweenRef = useRef(null);
 
-  // Fonction pour recalculer la largeur
   const updateScrollWidth = () => {
-    const scrollWidth = document.querySelector(".scroll").scrollWidth;
+    const scrollEl = document.querySelector(".scroll");
+    if (!scrollEl) return 0;
+
+    const scrollWidth = scrollEl.scrollWidth;
     const viewportWidth = window.innerWidth;
     return scrollWidth - viewportWidth;
   };
 
-  // Initialisation GSAP
   useEffect(() => {
     (async () => {
       const gsap = (await import("gsap")).default;
@@ -20,14 +21,14 @@ export default function Component() {
 
       const maxTranslate = updateScrollWidth();
 
-      horizontalTween = gsap.to(".scroll", {
+      tweenRef.current = gsap.to(".scroll", {
         x: -maxTranslate,
         ease: "none",
         duration: 1,
         scrollTrigger: {
           trigger: ".page",
           start: "top top",
-          end: "bottom+=1500% top",
+          end: "bottom+=1200% top",
           scrub: true,
           pin: true,
         },
@@ -35,9 +36,7 @@ export default function Component() {
     })();
   }, []);
 
-  // Gestion du filtrage
   const filterProjects = async (type) => {
-    const gsap = (await import("gsap")).default;
     setActiveFilter(type);
 
     const projects = document.querySelectorAll(".projects");
@@ -52,18 +51,21 @@ export default function Component() {
       }
     });
 
-    // Recalculer la distance de scroll
+    // Force le redraw du DOM avant la mesure
+    await new Promise((r) => requestAnimationFrame(r));
+
+    const gsap = (await import("gsap")).default;
+    const { ScrollTrigger } = await import("gsap/ScrollTrigger");
+
     const maxTranslate = updateScrollWidth();
 
-    if (horizontalTween) {
-      horizontalTween.vars.x = -maxTranslate;
-      horizontalTween.invalidate();
+    if (tweenRef.current) {
+      tweenRef.current.vars.x = -maxTranslate;
+      tweenRef.current.invalidate(); // recalcul des valeurs internes
     }
 
-    const { ScrollTrigger } = await import("gsap/ScrollTrigger");
-    ScrollTrigger.refresh();
+    ScrollTrigger.refresh(); // recalcul global
   };
-
   return (
     <div className="page">
       <div className="viewport">

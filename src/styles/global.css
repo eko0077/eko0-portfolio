@@ -12,14 +12,6 @@
   font-family: "Prolinea Demo";
   src: url("/src/assets/fonts/ProlineaDemo-ExtraBlack-BF68cf609b8c28a.ttf") format("truetype");
 }
-:root {
-    --white-eko0: #F4F4F4;
-    --title-green-eko0: #7EDD79;
-    --subtitle-green-eko0-01: #15BC55;
-    --subtitle-green-eko0-02: #209B62;
-    --text: #00512E;
-    --black-eko0: #232323;
-}
 
 *{
     margin: 0px;
