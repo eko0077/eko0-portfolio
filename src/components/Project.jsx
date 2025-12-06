@@ -88,7 +88,7 @@ export default function Component() {
         </a>
         <div className="scroll">
           {/* NAV */}
-          <div className="nav">
+          <div className="nav" id="nav">
             <div className="section" onClick={() => filterProjects("all")}>
               <svg
                 className="section"
@@ -465,6 +465,10 @@ export default function Component() {
               </a>
             </div>
           </div>
+          {/* return */}
+          <a href="#nav" className="return"><svg className="r-arrow" xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74" fill="none">
+  <path d="M68.6621 68.6621L5 5M5 5L68.6621 5M5 5L5 68.6621" stroke="#B0FD64" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg><p className="r-text">Back to start</p></a>
         </div>
       </div>
     </div>
