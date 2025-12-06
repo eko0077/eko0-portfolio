@@ -34,7 +34,7 @@ export default function App() {
         {/* about me  */}
         <img
           className="eko0-img"
-          src="../src/assets/img/eko0-about-stikers.png"
+          src="/assets/img/eko0-about-stikers.png"
           alt=""
         />
         <div className="about-title-section">

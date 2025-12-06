@@ -8,18 +8,18 @@ export default function Footer() {
        <div className="page">
         <div className="footer">
          <div className="separation"></div>
-           <img class="eko0-footer" src="../src/assets/svg/eko0.svg" alt="" />
+           <img class="eko0-footer" src="/assets/svg/eko0.svg" alt="" />
            <div className="nav-footer">
             <div className="icon-footer">
-                {/* <img className="footer-icon" src="../src/assets/svg/paperclip.svg" alt="" />
+                {/* <img className="footer-icon" src="/assets/svg/paperclip.svg" alt="" />
                 <div className="vertical-separation"></div> */}
                 <div className="contact-footer">
-                    <a href="mailto:eko00.5177@gmail.com"><img className="footer-icon" src="../src/assets/svg/mail-dark.svg" alt="" /></a>
-            <a href="https://linktr.ee/eko0_zero"><img className="footer-icon" src="../src/assets/svg/linktree-dark.svg" alt="" /></a>
+                    <a href="mailto:eko00.5177@gmail.com"><img className="footer-icon" src="/assets/svg/mail-dark.svg" alt="" /></a>
+            <a href="https://linktr.ee/eko0_zero"><img className="footer-icon" src="/assets/svg/linktree-dark.svg" alt="" /></a>
                 </div>
             </div>
             <div className="tools">
-              <img src="../src/assets/svg/dark_mode.svg" alt="" />
+              <img src="/assets/svg/dark_mode.svg" alt="" />
              <div className="vertical-separation"></div>
               <p>EN</p>
             </div>

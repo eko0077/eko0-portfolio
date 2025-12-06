@@ -174,7 +174,7 @@ export default function Component() {
             <div className="img-p-section">
               <img
                 className="p-img"
-                src="../src/assets/img/traking-cove.png"
+                src="/assets/img/traking-cove.png"
                 alt=""
               />
               <p>09.2025</p>
@@ -216,7 +216,7 @@ export default function Component() {
             <div className="img-p-section">
               <img
                 className="p-img"
-                src="../src/assets/img/nela-img.png"
+                src="/assets/img/nela-img.png"
                 alt=""
               />
               <p>06.2025</p>
@@ -258,7 +258,7 @@ export default function Component() {
             <div className="img-p-section">
               <img
                 className="p-img"
-                src="../src/assets/img/satine-01.png"
+                src="/assets/img/satine-01.png"
                 alt=""
               />
               <p>04.2025</p>
@@ -300,7 +300,7 @@ export default function Component() {
             <div className="img-p-section">
               <img
                 className="p-img"
-                src="../src/assets/img/png-tuber.png"
+                src="/assets/img/png-tuber.png"
                 alt=""
               />
               <p>04.2025</p>
@@ -342,7 +342,7 @@ export default function Component() {
             <div className="img-p-section">
               <img
                 className="p-img"
-                src="../src/assets/img/UID-CP-IM21-DelVecchioClara@2x.png"
+                src="/assets/img/UID-CP-IM21-DelVecchioClara@2x.png"
                 alt=""
               />
               <p>01.2025</p>
@@ -384,7 +384,7 @@ export default function Component() {
             <div className="img-p-section">
               <img
                 className="p-img"
-                src="../src/assets/img/miku-01.png"
+                src="/assets/img/miku-01.png"
                 alt=""
               />
               <p>10.2024</p>
@@ -426,7 +426,7 @@ export default function Component() {
             <div className="img-p-section">
               <img
                 className="p-img"
-                src="../src/assets/img/character.png"
+                src="/assets/img/character.png"
                 alt=""
               />
               <p>10.2024</p>
