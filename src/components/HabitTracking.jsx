@@ -77,6 +77,15 @@ export default function App() {
             l.m,n.jk.h jkmjn .jkh knhhjk. h; nm,b uk;h{" "}
           </p>
         </div>
+        <div className="final-section">
+          <div className="final-title">final </div>
+          <div className="fin-pro-sec">
+            <img src="/assets/img/trackinghabits-01.png" alt="" />
+            <img src="/assets/img/trackinghabits-02.png" alt="" />{" "}
+            <img src="/assets/img/trackinghabits-03.png" alt="" />{" "}
+            <img src="/assets/img/trackinghabits-04.png" alt="" />
+          </div>
+        </div>
       </div>
     </div>
   );

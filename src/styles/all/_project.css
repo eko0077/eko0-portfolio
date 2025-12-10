@@ -75,4 +75,23 @@
   font-size: 38px;
   font-weight: 200;
 }
+.final-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.final-title {
+  color: #b0fd64;
+  font-family: Aeros;
+  font-size: 38px;
+  font-weight: 200;
+}
 /* Habit Tracking */
+.fin-pro-sec {
+  display: flex;
+}
+.fin-pro-sec img {
+  width: calc(25vw - 50px);
+}
