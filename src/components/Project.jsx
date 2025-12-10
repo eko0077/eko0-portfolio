@@ -39,7 +39,7 @@ export default function Component() {
 
       tweenRef.current = gsap.to(".scroll", {
         x: -maxTranslate,
-        ease: "none",
+    ease: "power2.inOut",
         duration: 1,
         scrollTrigger: {
           trigger: ".page",

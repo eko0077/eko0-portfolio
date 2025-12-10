@@ -2,22 +2,39 @@ import { useEffect, useRef, useState } from "react";
 
 export default function App() {
   const [isAtTop, setIsAtTop] = useState(true);
+  const containerRef = useRef(null); // Ref du container scrollable
+
   useEffect(() => {
+    const scrollContainer = containerRef.current || window;
+
     const onScroll = () => {
-      setIsAtTop(window.scrollY === 0);
+      const scrollTop =
+        scrollContainer === window
+          ? window.scrollY
+          : scrollContainer.scrollTop;
+      setIsAtTop(scrollTop === 0);
     };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
+
+    scrollContainer.addEventListener("scroll", onScroll);
+    return () => scrollContainer.removeEventListener("scroll", onScroll);
   }, []);
+
   const handleBackOrTop = () => {
+    const scrollContainer = containerRef.current || window;
+
     if (!isAtTop) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (scrollContainer === window) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        scrollContainer.scrollTo({ top: 0, behavior: "smooth" });
+      }
     } else {
       window.history.back();
     }
   };
+
   return (
-    <div className="page">
+    <div className="page" ref={containerRef}>
       <div className="info">
         <p className="text">
           Please open the site on desktop <br /> or a bigger screen
@@ -48,9 +65,9 @@ export default function App() {
           <div className="title-pro">Habit Tracking</div>
           <div className="subtitle-pro">UI / UX</div>
         </div>
-        <div className="sticky-containt">
-        <a onClick={handleBackOrTop}>
-          <div className="back2">
+    
+       
+          <button  type="button" className="back2" onClick={handleBackOrTop}>
             <svg
               className="back-arrow"
               xmlns="http://www.w3.org/2000/svg"
@@ -64,8 +81,8 @@ export default function App() {
                 fill="#B0FD64"
               />
             </svg>
-          </div>
-        </a>
+          </button>
+     
         <div className="cover-section">
           <img className="cover" src="/assets/img/traking-cove.png" alt="" />
           <p>09.2025</p>
@@ -128,6 +145,6 @@ export default function App() {
         </a>
         </div>
       </div>
-    </div>
+
   );
 }
