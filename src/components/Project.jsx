@@ -275,7 +275,7 @@ ease: "power1.inOut",
                   uk;h
                 </p>
 
-                <a className="see-p" href="">
+                <a className="see-p" href="nela">
                   <p>see project</p>
                   <svg
                     className="arrow"

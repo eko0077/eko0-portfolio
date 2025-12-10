@@ -92,6 +92,20 @@
   font-size: 38px;
   font-weight: 200;
 }
+.sketch-section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 300px;
+}
+.sketch-title {
+  color: #b0fd64;
+  font-family: Aeros;
+  font-size: 38px;
+  font-weight: 200;
+}
 .moodbaord-section{
   display: flex;
   flex-direction: column;
@@ -159,4 +173,39 @@ border-radius: 10px;
 width: calc(25vw - 70px);
 aspect-ratio: 358.28/1080.32;
 border-radius: 10px;
+}
+/* Nela */
+
+.nela-1{
+width: calc(16vw - 43px);
+aspect-ratio: 244.40/1112.89;
+border-radius: 10px;
+}
+.nela-2{
+width: calc(16vw - 43px);
+aspect-ratio: 244.40/959.43;
+border-radius: 10px;
+}
+.nela-3{
+width: calc(16vw - 43px);
+aspect-ratio: 244.40/959.43;
+border-radius: 10px;
+}
+.nela-4{
+width: calc(16vw - 43px);
+aspect-ratio: 244.40/794.60;
+border-radius: 10px;
+}
+.nela-5{
+width: calc(16vw - 43px);
+aspect-ratio: 244.40/1256.69;
+border-radius: 10px;
+}
+.nela-6{
+width: calc(16vw - 43px);
+aspect-ratio: 244.40/1036.16;
+border-radius: 10px;
+}
+.nela-sketch{
+  border-radius: 15px;
 }
