@@ -139,31 +139,3 @@
   aspect-ratio: 535/301;
   margin-top: 15vh;
 }
-.return{
-  display: flex;
-  gap:50px;
-align-items: center;
-
-  margin-right: 30vh;
-      transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-}
-
-.r-text{
-  color: #b0fd64;
-  font-family: IntraNet;
-  font-size: 40px;
-  font-weight: 300;
-  line-height: 80px;
-  letter-spacing: 5px;
-  width: 500px;
-}
-.r-arrow{
-  height: 50px;
-    transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-}
-.return:hover .r-arrow {
-  transform: rotate(-90deg);
-}
-.return:hover {
-  gap: 80px;
-}
