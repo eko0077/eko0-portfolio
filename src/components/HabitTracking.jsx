@@ -48,8 +48,9 @@ export default function App() {
           <div className="title-pro">Habit Tracking</div>
           <div className="subtitle-pro">UI / UX</div>
         </div>
+        <div className="sticky-containt">
         <a onClick={handleBackOrTop}>
-          <div className="back-2">
+          <div className="back2">
             <svg
               className="back-arrow"
               xmlns="http://www.w3.org/2000/svg"
@@ -80,11 +81,51 @@ export default function App() {
         <div className="final-section">
           <div className="final-title">final </div>
           <div className="fin-pro-sec">
-            <img src="/assets/img/trackinghabits-01.png" alt="" />
-            <img src="/assets/img/trackinghabits-02.png" alt="" />{" "}
-            <img src="/assets/img/trackinghabits-03.png" alt="" />{" "}
-            <img src="/assets/img/trackinghabits-04.png" alt="" />
+            <img
+              className="habit-1"
+              src="/assets/img/trackinghabits-01.png"
+              alt=""
+            />
+            <img
+              className="habit-2"
+              src="/assets/img/trackinghabits-02.png"
+              alt=""
+            />{" "}
+            <img
+              className="habit-3"
+              src="/assets/img/trackinghabits-03.png"
+              alt=""
+            />{" "}
+            <img
+              className="habit-4"
+              src="/assets/img/trackinghabits-04.png"
+              alt=""
+            />
           </div>
+        </div>
+        <div className="moodbaord-section">
+          <div className="moodbaord-title">moodboard</div>
+          <img src="/assets/img/habit-moodbaord.png" alt="" />
+        </div>
+        <a className="next-p" href="">
+          <p>next project</p>
+          <svg
+            className="arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="42"
+            viewBox="0 0 42 42"
+            fill="none"
+          >
+            <path
+              d="M3.00003 38.8857L38.8857 3.00004M38.8857 3.00004H3.00003M38.8857 3.00004V38.8857"
+              stroke="#B0FD64"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
         </div>
       </div>
     </div>
