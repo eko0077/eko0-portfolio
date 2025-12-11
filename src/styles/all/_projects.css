@@ -52,6 +52,18 @@
   align-items: center;
   gap: 40px;
   height: 55px;
+  margin-left: -20px;
+}
+/* Active filter: make selected section white instead of green */
+.nav > .section.active svg path,
+.nav > .section.active svg {
+  fill: #e7ffd0 !important;
+  stroke: #e7ffd0 !important;
+}
+.nav > .section.active .category,
+.nav > .section.active .category p {
+  color: #e7ffd0 !important;
+  gap: 50px;
 }
 .category {
   display: flex;

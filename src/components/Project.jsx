@@ -3,14 +3,16 @@ import { useEffect, useRef, useState } from "react";
 export default function Component() {
   const [activeFilter, setActiveFilter] = useState("all");
   const [isAtTop, setIsAtTop] = useState(true);
+  const tweenRef = useRef(null);
+
+  // Detect if user is at top of page
   useEffect(() => {
-    const onScroll = () => {
-      setIsAtTop(window.scrollY === 0);
-    };
+    const onScroll = () => setIsAtTop(window.scrollY === 0);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Go back or scroll top
   const handleBackOrTop = () => {
     if (!isAtTop) {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -18,8 +20,8 @@ export default function Component() {
       window.history.back();
     }
   };
-  const tweenRef = useRef(null);
 
+  // Compute scrollable distance for horizontal scrolling
   const updateScrollWidth = () => {
     const scrollEl = document.querySelector(".scroll");
     if (!scrollEl) return 0;
@@ -29,15 +31,33 @@ export default function Component() {
     return scrollWidth - viewportWidth;
   };
 
+  // Initial GSAP setup
   useEffect(() => {
     (async () => {
-      const gsap = (await import("gsap")).default;
+      const gsapModule = (await import("gsap")).default;
       const { ScrollTrigger } = await import("gsap/ScrollTrigger");
-      gsap.registerPlugin(ScrollTrigger);
 
+      gsapModule.registerPlugin(ScrollTrigger);
+
+      const sectionEls = document.querySelectorAll(".nav > .section");
+      if (sectionEls.length) {
+        gsapModule.to(sectionEls, {
+          x: "50px",
+          duration: 0.5,
+          stagger: 0.08,
+        });
+      }
+      const projectsEls = document.querySelectorAll(".projects");
+      if (projectsEls.length) {
+        gsapModule.to(projectsEls, {
+          x: "-50px",
+          duration: 0.5,
+          stagger: 0.08,
+        });
+      }
       const maxTranslate = updateScrollWidth();
 
-      tweenRef.current = gsap.to(".scroll", {
+      tweenRef.current = gsapModule.to(".scroll", {
         x: -maxTranslate,
         ease: "power1.inOut",
         duration: 1,
@@ -52,6 +72,7 @@ export default function Component() {
     })();
   }, []);
 
+  // Filter projects and refresh ScrollTrigger
   const filterProjects = async (type) => {
     setActiveFilter(type);
 
@@ -67,21 +88,42 @@ export default function Component() {
       }
     });
 
-    // Force le redraw du DOM avant la mesure
-    await new Promise((r) => requestAnimationFrame(r));
+    // Force layout update before recalculating scroll width
+    await new Promise((resolve) => requestAnimationFrame(resolve));
 
-    const gsap = (await import("gsap")).default;
+    const gsapModule = (await import("gsap")).default;
     const { ScrollTrigger } = await import("gsap/ScrollTrigger");
 
     const maxTranslate = updateScrollWidth();
 
     if (tweenRef.current) {
       tweenRef.current.vars.x = -maxTranslate;
-      tweenRef.current.invalidate(); // recalcul des valeurs internes
+      tweenRef.current.invalidate();
     }
 
-    ScrollTrigger.refresh(); // recalcul global
+    ScrollTrigger.refresh();
+
+    // replay nav section animation so it runs each time a filter is clicked
+    const sectionEls = document.querySelectorAll(".nav > .section");
+    if (sectionEls.length) {
+      gsapModule.set(sectionEls, { x: 0 });
+      gsapModule.to(sectionEls, {
+        x: 50,
+        duration: 0.5,
+        stagger: 0.08,
+      });
+    }
+    const projectsEls = document.querySelectorAll(" .projects");
+    if (projectsEls.length) {
+      gsapModule.set(projectsEls, { x: 0 });
+      gsapModule.to(projectsEls, {
+        x: -50,
+        duration: 0.5,
+        stagger: 0.08,
+      });
+    }
   };
+
   return (
     <div className="page">
       <div className="viewport">
@@ -105,8 +147,8 @@ export default function Component() {
           </a>
           <div className="scroll">
             {/* NAV */}
-            <div className="nav" id="nav">
-              <div className="section" onClick={() => filterProjects("all")}>
+            <div className="nav">
+              <div className={`section ${activeFilter === 'all' ? 'active' : ''}`} onClick={() => filterProjects("all")}>
                 <svg
                   className="section"
                   xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +168,7 @@ export default function Component() {
                   <p>]</p>
                 </div>
               </div>
-              <div className="section" onClick={() => filterProjects("ui")}>
+              <div className={`section ${activeFilter === 'ui' ? 'active' : ''}`} onClick={() => filterProjects("ui")}>
                 <svg
                   className="section"
                   xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +188,7 @@ export default function Component() {
                   <p>]</p>
                 </div>
               </div>
-              <div className="section" onClick={() => filterProjects("gd")}>
+              <div className={`section ${activeFilter === 'gd' ? 'active' : ''}`} onClick={() => filterProjects("gd")}>
                 <svg
                   className="section"
                   xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +208,7 @@ export default function Component() {
                   <p>]</p>
                 </div>
               </div>
-              <div className="section" onClick={() => filterProjects("cd")}>
+              <div className={`section ${activeFilter === 'cd' ? 'active' : ''}`} onClick={() => filterProjects("cd")}>
                 <svg
                   className="section"
                   xmlns="http://www.w3.org/2000/svg"
@@ -210,7 +252,7 @@ export default function Component() {
                   uk;h
                 </p>
 
-                <a className="see-p" href="habittracking">
+                <a className="see-p" href="../habittracking">
                   <p>see project</p>
                   <svg
                     className="arrow"
@@ -249,7 +291,7 @@ export default function Component() {
                   uk;h
                 </p>
 
-                <a className="see-p" href="nela">
+                <a className="see-p" href="../nela">
                   <p>see project</p>
                   <svg
                     className="arrow"
