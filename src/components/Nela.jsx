@@ -1,43 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 
 export default function App() {
-  const [isAtTop, setIsAtTop] = useState(true);
-  const containerRef = useRef(null); // Ref du container scrollable
+  const containerRef = useRef(null);
 
-  useEffect(() => {
-    const scrollContainer = containerRef.current || window;
-
-    const onScroll = () => {
-      const scrollTop =
-        scrollContainer === window ? window.scrollY : scrollContainer.scrollTop;
-      setIsAtTop(scrollTop === 0);
-    };
-
-    scrollContainer.addEventListener("scroll", onScroll);
-    return () => scrollContainer.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const handleBackOrTop = () => {
-    const scrollContainer = containerRef.current || window;
-
-    if (!isAtTop) {
-      if (scrollContainer === window) {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      } else {
-        scrollContainer.scrollTo({ top: 0, behavior: "smooth" });
-      }
-    } else {
-      window.history.back();
-    }
+  const handleBack = () => {
+    window.history.back();
   };
-
   return (
     <div className="page" ref={containerRef}>
       <div className="all">
         <div className="cover-section">
           <img className="cover" src="/assets/img/nela-img.png" alt="" />
         </div>
-        <button type="button" className="back2" onClick={handleBackOrTop}>
+        <button type="button" className="back2" onClick={handleBack}>
           <svg
             className="back-arrow"
             xmlns="http://www.w3.org/2000/svg"
