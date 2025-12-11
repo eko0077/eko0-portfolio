@@ -9,9 +9,7 @@ export default function App() {
 
     const onScroll = () => {
       const scrollTop =
-        scrollContainer === window
-          ? window.scrollY
-          : scrollContainer.scrollTop;
+        scrollContainer === window ? window.scrollY : scrollContainer.scrollTop;
       setIsAtTop(scrollTop === 0);
     };
 
@@ -35,59 +33,30 @@ export default function App() {
 
   return (
     <div className="page" ref={containerRef}>
-      <div className="info">
-        <p className="text">
-          Please open the site on desktop <br /> or a bigger screen
-        </p>
-        <p className="chiffre"> {">"} 1440</p>
-        <div className="pdf">
-          <p className="text">see pdf version</p>
+      <div className="all">
+        <div className="cover-section">
+          <img className="cover" src="/assets/img/nela-img.png" alt="" />
+        </div>
+        <button type="button" className="back2" onClick={handleBackOrTop}>
           <svg
-            className="arrowe"
+            className="back-arrow"
             xmlns="http://www.w3.org/2000/svg"
-            width="42"
-            height="42"
-            viewBox="0 0 42 42"
+            width="58"
+            height="94"
+            viewBox="0 0 58 94"
             fill="none"
           >
             <path
-              d="M3.00002 38.8857L38.8857 3.00004M38.8857 3.00004H3.00002M38.8857 3.00004V38.8857"
-              stroke="#B0FD64"
-              stroke-width="6"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              d="M21.9333 47L57.9667 83.0333L47 94L0 47L47 -1.90735e-06L57.9667 10.9667L21.9333 47Z"
+              fill="#B0FD64"
             />
           </svg>
-        </div>
-      </div>
-      <div className="all">
+        </button>
         <div className="title-page-pro">
           <div className="title-pro">Nela</div>
-          <div className="subtitle-pro">UI / UX & motion
-          </div>
+          <div className="subtitle-pro">UI / UX & motion</div>
         </div>
-    
-       
-          <button  type="button" className="back2" onClick={handleBackOrTop}>
-            <svg
-              className="back-arrow"
-              xmlns="http://www.w3.org/2000/svg"
-              width="58"
-              height="94"
-              viewBox="0 0 58 94"
-              fill="none"
-            >
-              <path
-                d="M21.9333 47L57.9667 83.0333L47 94L0 47L47 -1.90735e-06L57.9667 10.9667L21.9333 47Z"
-                fill="#B0FD64"
-              />
-            </svg>
-          </button>
-     
-        <div className="cover-section">
-          <img className="cover" src="/assets/img/nela-img.png" alt="" />
-          <p>06.2025</p>
-        </div>
+
         <div className="context-section">
           <div className="context-title">Context</div>
           <p>
@@ -97,50 +66,43 @@ export default function App() {
           </p>
         </div>
         <div className="final-section">
-          <div className="final-title">final web interface  </div>
+          <div className="final-title">final web interface </div>
           <div className="fin-pro-sec">
-            <img
-              className="nela-1"
-              src="/assets/img/nela-1.png"
-              alt=""
-            />
-            <img
-              className="nela-2"
-              src="/assets/img/nela-2.png"
-              alt=""
-            />
-            <img
-              className="nela-3"
-              src="/assets/img/nela-3.png"
-              alt=""
-            />
-            <img
-              className="nela-4"
-              src="/assets/img/nela-4.png"
-              alt=""
-            />
-                  <img
-              className="nela-5"
-              src="/assets/img/nela-5.png"
-              alt=""
-            />
-            <img
-              className="nela-6"
-              src="/assets/img/nela-6.png"
-              alt=""
-            />
+            <img className="nela-1" src="/assets/img/nela-1.png" alt="" />
+            <img className="nela-2" src="/assets/img/nela-2.png" alt="" />
+            <img className="nela-3" src="/assets/img/nela-3.png" alt="" />
+            <img className="nela-4" src="/assets/img/nela-4.png" alt="" />
+            <img className="nela-5" src="/assets/img/nela-5.png" alt="" />
+            <img className="nela-6" src="/assets/img/nela-6.png" alt="" />
           </div>
         </div>
-         <div className="final-section">
+        <div className="final-section">
           <div className="final-title">final animate affiche</div>
-    
-      {/* video */}
-        
+          <div className="nela-vid">
+            <video src="/assets/video/nela-video.mp4" controls></video>
+          </div>
         </div>
-                <div className="sketch-section">
+        <div className="sketch-section">
           <div className="sketch-title">sketchs</div>
-          <img className="nela-sketch" src="/assets/img/nela-sketch-1.png" alt="" />
-           <img className="nela-sketch" src="/assets/img/nela-sketch-2.png" alt="" />
+          <img
+            className="nela-sketch"
+            src="/assets/img/nela-sketch-1.png"
+            alt=""
+          />
+          <img
+            className="nela-sketch"
+            src="/assets/img/nela-sketch-2.png"
+            alt=""
+          />
+          <div className="nela-gif-section">
+            <img
+              className="gif-1-nela"
+              src="/assets/img/nela-gif-1.gif"
+              alt=""
+            />
+            <img src="/assets/img/nela-gif-2.gif" alt="" />
+          </div>
+          <img className="gif-3-nela" src="/assets/img/nela-gif-3.gif" alt="" />
         </div>
         <div className="moodbaord-section">
           <div className="moodbaord-title">moodboard</div>
@@ -165,8 +127,7 @@ export default function App() {
             />
           </svg>
         </a>
-        </div>
       </div>
-
+    </div>
   );
 }

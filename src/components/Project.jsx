@@ -39,7 +39,7 @@ export default function Component() {
 
       tweenRef.current = gsap.to(".scroll", {
         x: -maxTranslate,
-ease: "power1.inOut",
+        ease: "power1.inOut",
         duration: 1,
         scrollTrigger: {
           trigger: ".page",
@@ -84,32 +84,6 @@ ease: "power1.inOut",
   };
   return (
     <div className="page">
-      <div className="info">
-        <p className="text">
-          Please open the site on desktop <br /> or a bigger screen
-        </p>
-        <p className="chiffre"> {">"} 1440</p>
-        <div className="pdf">
-          <p className="text">see pdf version</p>
-          <svg
-            className="arrowe"
-            xmlns="http://www.w3.org/2000/svg"
-            width="42"
-            height="42"
-            viewBox="0 0 42 42"
-            fill="none"
-          >
-            <path
-              d="M3.00002 38.8857L38.8857 3.00004M38.8857 3.00004H3.00002M38.8857 3.00004V38.8857"
-              stroke="#B0FD64"
-              stroke-width="6"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </div>
-      </div>
-
       <div className="viewport">
         <div className="all">
           <a onClick={handleBackOrTop}>

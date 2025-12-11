@@ -37,53 +37,6 @@ img {
   color: #ffffff;
   scroll-behavior: smooth;
 }
+
 @media (max-width: 1440px) {
-  .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 45vh;
-    gap: 5vh;
-  }
-  .info .text {
-    color: #b0fd64;
-    text-align: center;
-    font-family: IntraNet;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 1.76px;
-  }
-  .chiffre {
-    color: rgba(255, 255, 255, 0.5);
-    text-align: center;
-    font-family: Aeros;
-    font-size: 15px;
-    font-weight: 400;
-  }
-  .pdf {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-    gap: 10px;
-  }
-  .arrowe {
-    height: 23px;
-  }
-  .pdf .arrowe {
-    transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-    z-index: 100;
-  }
-  .pdf:hover .arrowe {
-    transform: rotate(90deg);
-  }
-  .pdf:hover {
-    gap: 30px;
-  }
-  .all {
-    display: none;
-  }
-  .viewport {
-    display: none;
-  }
 }

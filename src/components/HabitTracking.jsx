@@ -9,9 +9,7 @@ export default function App() {
 
     const onScroll = () => {
       const scrollTop =
-        scrollContainer === window
-          ? window.scrollY
-          : scrollContainer.scrollTop;
+        scrollContainer === window ? window.scrollY : scrollContainer.scrollTop;
       setIsAtTop(scrollTop === 0);
     };
 
@@ -35,58 +33,31 @@ export default function App() {
 
   return (
     <div className="page" ref={containerRef}>
-      <div className="info">
-        <p className="text">
-          Please open the site on desktop <br /> or a bigger screen
-        </p>
-        <p className="chiffre"> {">"} 1440</p>
-        <div className="pdf">
-          <p className="text">see pdf version</p>
+      <div className="all">
+        <div className="cover-section">
+          <img className="cover" src="/assets/img/traking-cove.png" alt="" />
+        </div>
+
+        <button type="button" className="back2" onClick={handleBackOrTop}>
           <svg
-            className="arrowe"
+            className="back-arrow"
             xmlns="http://www.w3.org/2000/svg"
-            width="42"
-            height="42"
-            viewBox="0 0 42 42"
+            width="58"
+            height="94"
+            viewBox="0 0 58 94"
             fill="none"
           >
             <path
-              d="M3.00002 38.8857L38.8857 3.00004M38.8857 3.00004H3.00002M38.8857 3.00004V38.8857"
-              stroke="#B0FD64"
-              stroke-width="6"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              d="M21.9333 47L57.9667 83.0333L47 94L0 47L47 -1.90735e-06L57.9667 10.9667L21.9333 47Z"
+              fill="#B0FD64"
             />
           </svg>
-        </div>
-      </div>
-      <div className="all">
+        </button>
         <div className="title-page-pro">
           <div className="title-pro">Habit Tracking</div>
           <div className="subtitle-pro">UI / UX</div>
         </div>
-    
-       
-          <button  type="button" className="back2" onClick={handleBackOrTop}>
-            <svg
-              className="back-arrow"
-              xmlns="http://www.w3.org/2000/svg"
-              width="58"
-              height="94"
-              viewBox="0 0 58 94"
-              fill="none"
-            >
-              <path
-                d="M21.9333 47L57.9667 83.0333L47 94L0 47L47 -1.90735e-06L57.9667 10.9667L21.9333 47Z"
-                fill="#B0FD64"
-              />
-            </svg>
-          </button>
-     
-        <div className="cover-section">
-          <img className="cover" src="/assets/img/traking-cove.png" alt="" />
-          <p>09.2025</p>
-        </div>
+
         <div className="context-section">
           <div className="context-title">Context</div>
           <p>
@@ -143,8 +114,7 @@ export default function App() {
             />
           </svg>
         </a>
-        </div>
       </div>
-
+    </div>
   );
 }
