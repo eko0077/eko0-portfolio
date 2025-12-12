@@ -70,7 +70,7 @@ export default function App() {
           <div className="moodbaord-title">moodboard</div>
           <img src="/assets/img/habit-moodbaord.png" alt="" />
         </div>
-        <a className="next-p" href="nela">
+        <a className="next-p" href="../nela">
           <p>next project</p>
           <svg
             className="arrow"

@@ -64,7 +64,7 @@ export default function Component() {
         scrollTrigger: {
           trigger: ".page",
           start: "top top",
-          end: "bottom+=1150% top",
+          end: "bottom+=500% top",
           scrub: true,
           pin: true,
         },

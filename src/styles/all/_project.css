@@ -44,15 +44,10 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: flex-end;
-  justify-content: center;
-  color: #b0fd64;
-  text-align: right;
-  font-family: K2D;
-  font-size: 26px;
-  font-weight: 400;
-  height: 100vh;
+  justify-content: top;
+
   width: 100vw;
+  margin-top: -5px;
   aspect-ratio: 535/301;
   margin-bottom: 100px;
 }

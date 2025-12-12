@@ -1,4 +1,27 @@
+import { useEffect } from "react";
+import { gsap } from "gsap";
+
 export default function App() {
+  useEffect(() => {
+    const titleEls = document.querySelectorAll(".title");
+   const nameEls = document.querySelectorAll(".name");
+    if (titleEls.length) {
+      gsap.set(titleEls, { y: 0 });
+      gsap.to(titleEls, {
+        y: -50,
+        duration: 0.5,
+        stagger: 0.08,
+      });
+    }
+        if (nameEls.length) {
+      gsap.set(nameEls, { y: 0 });
+      gsap.to(nameEls, {
+        y: -20,
+        duration: 0.5,
+        stagger: 0.08,
+      });
+    }
+  }, []); 
   return (
     <div className="page">
       <div className="all">
